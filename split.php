@@ -191,8 +191,8 @@
     </div>
     <footer>
         <small>
-            <p>Source code is available on <a href="https://github.com/sekaino-usay/Icon-Ukrainer" target="_blank">GitHub</a></p>
-            <p>Copyright © 2022 <a href=" https://icon-ukrainer.usay05.com" target="_blank">Icon Ukrainer</a> All Rights Reserved.</p>
+            <p>Source code is available on <a href="https://github.com/sekaino-usay/9-splitter" target="_blank">GitHub</a></p>
+            <p>Copyright © 2022 <a href=" https://9split.usay05.com">9 Splitter</a> All Rights Reserved.</p>
         </small>
     </footer>
 </body>
