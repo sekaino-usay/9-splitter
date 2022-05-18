@@ -120,15 +120,15 @@
             //画像を3x3に分割した画像をリサイズした画像をzip圧縮してダウンロード
             echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURLから，または画像を長押しして保存し，ご使用ください．</p>";
             echo "<a href='" . $zip_name . "' download='9-split.zip'>ZIPでまとめてダウンロード</a><br>";
-            echo "<img src='" . $dir . "split-9.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-8.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-7.jpg' width='10%'><br>";
-            echo "<img src='" . $dir . "split-6.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-5.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-4.jpg' width='10%'><br>";
-            echo "<img src='" . $dir . "split-3.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-2.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-1.jpg' width='10%'>";
+            echo "<a href='" . $dir . "split-9.jpg' target='_blank'><img src='" . $dir . "split-9.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-8.jpg' target='_blank'><img src='" . $dir . "split-8.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-7.jpg' target='_blank'><img src='" . $dir . "split-7.jpg' width='10%'></a><br>";
+            echo "<a href='" . $dir . "split-6.jpg' target='_blank'><img src='" . $dir . "split-6.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-5.jpg' target='_blank'><img src='" . $dir . "split-5.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-4.jpg' target='_blank'><img src='" . $dir . "split-4.jpg' width='10%'></a><br>";
+            echo "<a href='" . $dir . "split-3.jpg' target='_blank'><img src='" . $dir . "split-3.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-2.jpg' target='_blank'><img src='" . $dir . "split-2.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-1.jpg' target='_blank'><img src='" . $dir . "split-1.jpg' width='10%'></a>";
         }
 
         //mineタイプがimage/pngの場合の関数
@@ -200,15 +200,15 @@
             //画像を3x3に分割した画像をリサイズした画像をzip圧縮してダウンロード
             echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURLから，または画像を長押しして保存し，ご使用ください．</p>";
             echo "<a href='" . $zip_name . "' download='9-split.zip'>ZIPでまとめてダウンロード</a><br>";
-            echo "<img src='" . $dir . "split-9.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-8.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-7.jpg' width='10%'><br>";
-            echo "<img src='" . $dir . "split-6.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-5.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-4.jpg' width='10%'><br>";
-            echo "<img src='" . $dir . "split-3.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-2.jpg' width='10%'>";
-            echo "<img src='" . $dir . "split-1.jpg' width='10%'>";
+            echo "<a href='" . $dir . "split-9.jpg' target='_blank'><img src='" . $dir . "split-9.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-8.jpg' target='_blank'><img src='" . $dir . "split-8.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-7.jpg' target='_blank'><img src='" . $dir . "split-7.jpg' width='10%'></a><br>";
+            echo "<a href='" . $dir . "split-6.jpg' target='_blank'><img src='" . $dir . "split-6.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-5.jpg' target='_blank'><img src='" . $dir . "split-5.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-4.jpg' target='_blank'><img src='" . $dir . "split-4.jpg' width='10%'></a><br>";
+            echo "<a href='" . $dir . "split-3.jpg' target='_blank'><img src='" . $dir . "split-3.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-2.jpg' target='_blank'><img src='" . $dir . "split-2.jpg' width='10%'></a>";
+            echo "<a href='" . $dir . "split-1.jpg' target='_blank'><img src='" . $dir . "split-1.jpg' width='10%'></a>";
         }
         ?>
         <p>何か問題があれば，<a href="https://twitter.com/sekaino_usay" target="_blank">U_SAY</a>までご連絡をお願いします．</p>
