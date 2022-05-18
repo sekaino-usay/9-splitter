@@ -118,7 +118,7 @@
             }
 
             //画像を3x3に分割した画像をリサイズした画像をzip圧縮してダウンロード
-            echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURL，または画像を長押しして保存し，ご使用ください．</p>";
+            echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURLから，または画像を長押しして保存し，ご使用ください．</p>";
             echo "<a href='" . $zip_name . "' download='9-split.zip'>ZIPでまとめてダウンロード</a><br>";
             echo "<img src='" . $dir . "split-9.jpg' width='10%'>";
             echo "<img src='" . $dir . "split-8.jpg' width='10%'>";
@@ -198,7 +198,7 @@
             }
 
             //画像を3x3に分割した画像をリサイズした画像をzip圧縮してダウンロード
-            echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURL，または画像を長押しして保存し，ご使用ください．</p>";
+            echo "<p>分割が正常に完了しました！<br>以下のZIPファイルのURLから，または画像を長押しして保存し，ご使用ください．</p>";
             echo "<a href='" . $zip_name . "' download='9-split.zip'>ZIPでまとめてダウンロード</a><br>";
             echo "<img src='" . $dir . "split-9.jpg' width='10%'>";
             echo "<img src='" . $dir . "split-8.jpg' width='10%'>";
