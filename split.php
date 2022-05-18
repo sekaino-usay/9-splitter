@@ -24,6 +24,11 @@
     <div>
 
         <?php
+        //dataディレクトリが存在しない場合は作成
+        if (!file_exists("./data")) {
+            mkdir("./data");
+        }
+
         //画像が選択されていない場合はエラーを出力
         if (empty($_FILES['img']['tmp_name'])) {
             echo '画像が選択されていません．';
