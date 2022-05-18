@@ -1,0 +1,29 @@
+# .htaccessと.htpasswdへアクセス制限
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
+Options -Indexes
+
+# エラーページ
+ErrorDocument 403 https://error.usay05.com/403
+ErrorDocument 404 https://error.usay05.com/404
+
+RewriteEngine on
+
+# URLを統一
+RewriteCond %{HTTP_HOST} ^(www\.9split\.usay05\.com)(:80)? [NC]
+RewriteRule ^(.*) https://9split.usay05.com/$1 [R=301,L]
+
+# 拡張子なしのURLに統一
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+# デフォルトページを設定
+DirectoryIndex index.php index.html
+
+order deny,allow
+
+# PHPのエラーを非表示
+php_flag display_errors Off
