@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <a href="./index.php"><img src="./img/logo.png" width="10%" alt="9 Splitter for Instagram"></a>
-    <a href="./index.php" style="color: black; text-decoration: none;">
+    <a href="./index"><img src="./img/logo.png" width="10%" alt="9 Splitter for Instagram"></a>
+    <a href="./index" style="color: black; text-decoration: none;">
         <h1>9 Splitter for Instagram</h1>
     </a>
     <div>
         <p>画像を3×3に9等分します．</p>
         <p>正方形の画像を選択して，「Split!」ボタンを押してください．ファイルの形式は jpg（jpeg）か png にしてください．</p>
-        <form action="./split.php" method="post" enctype="multipart/form-data">
+        <form action="./split" method="post" enctype="multipart/form-data">
             <input type="file" name="img" accept=".png,.jpg,.jpeg" required>
             <br>
             <button type="submit">Split!</button>
