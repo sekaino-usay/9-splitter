@@ -17,12 +17,14 @@
 </head>
 
 <body>
-    <a href="./index.php"><img src="./img/logo.png" width="10%" alt="9 Splitter for Instagram"></a>
-    <a href="./index.php" style="color: black; text-decoration: none;">
-        <h1>9 Splitter for Instagram</h1>
-    </a>
-    <div>
+    <div id="header">
+        <a href="./index"><img src="./img/logo.png" alt="9 Splitter for Instagram"></a>
+        <a href="./index" style="color: black; text-decoration: none;">
+            <h1>9 Splitter for Instagram</h1>
+        </a>
+    </div>
 
+    <div id="content">
         <?php
         //dataディレクトリが存在しない場合は作成
         if (!file_exists("./data")) {
@@ -213,6 +215,7 @@
         ?>
         <p>何か問題があれば，<a href="https://twitter.com/sekaino_usay" target="_blank">U_SAY</a>までご連絡をお願いします．</p>
     </div>
+
     <footer>
         <small>
             <p>Source code is available on <a href="https://github.com/sekaino-usay/9-splitter" target="_blank">GitHub</a></p>

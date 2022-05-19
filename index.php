@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+<?php
+//ユーザーエージェントを取得
+$ua = $_SERVER['HTTP_USER_AGENT'];
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9 Splitter for Instagram</title>
-    <link rel="stylesheet" href="./style.css">
+    <?php
+    //CSSファイルをユーザーエージェントに合わせて読み込む
+    if (strpos($ua, 'iPhone') !== false || strpos($ua, 'iPod') !== false || strpos($ua, 'Android') !== false && strpos($ua, 'Mobile') !== false) { //スマホの場合
+        echo '<link rel="stylesheet" href="./css/style_sp.css">';
+    } else { //PCの場合
+        echo '<link rel="stylesheet" href="./css/style.css">';
+    }
+    ?>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +29,14 @@
 </head>
 
 <body>
-    <a href="./index"><img src="./img/logo.png" width="10%" alt="9 Splitter for Instagram"></a>
-    <a href="./index" style="color: black; text-decoration: none;">
-        <h1>9 Splitter for Instagram</h1>
-    </a>
-    <div>
+    <div id="header">
+        <a href="./index"><img src="./img/logo.png" alt="9 Splitter for Instagram"></a>
+        <a href="./index" style="color: black; text-decoration: none;">
+            <h1>9 Splitter for Instagram</h1>
+        </a>
+    </div>
+
+    <div id="content">
         <p>画像を3×3に9等分します．</p>
         <p>正方形の画像を選択して，「Split!」ボタンを押してください．ファイルの形式は jpg（jpeg）か png にしてください．</p>
         <form action="./split" method="post" enctype="multipart/form-data">
@@ -30,6 +45,7 @@
             <button type="submit">Split!</button>
         </form>
     </div>
+
     <footer>
         <small>
             <p>Source code is available on <a href="https://github.com/sekaino-usay/9-splitter" target="_blank">GitHub</a></p>
