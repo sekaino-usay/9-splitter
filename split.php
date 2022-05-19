@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+<?php
+//ユーザーエージェントを取得
+$ua = $_SERVER['HTTP_USER_AGENT'];
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9 Splitter for Instagram</title>
-    <link rel="stylesheet" href="./style.css">
+    <?php
+    //CSSファイルをユーザーエージェントに合わせて読み込む
+    if (strpos($ua, 'iPhone') !== false || strpos($ua, 'iPod') !== false || strpos($ua, 'Android') !== false && strpos($ua, 'Mobile') !== false) { //スマホの場合
+        echo '<link rel="stylesheet" href="./css/style_sp.css">';
+    } else { //PCの場合
+        echo '<link rel="stylesheet" href="./css/style.css">';
+    }
+    ?>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
