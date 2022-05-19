@@ -11,7 +11,8 @@ body {
     /* テキスト中央寄せ */
     text-align: center;
     /* 余白 */
-    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Google Font */
@@ -29,11 +30,13 @@ p {
 }
 
 #content {
-    width: 95%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -43,10 +46,11 @@ p {
 }
 
 #content img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* ボタンの設定 */
